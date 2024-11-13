@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #04a3f3
+}
+
+.left-login > p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color:#04a3fb
+
+}
+
+.left-login-image {
+    width: 12vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 100px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login > h1 {
+    color: #04a3f3;
+    font-weight: 800;
+    margin: 0;
+}
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 20px 0px;
+}
+.textfield > input {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #929da8; 
+    border-radius: 10px;
+    background: #929da8;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box; 
+    transition: all 0.3s ease; 
+}
+.textfield > input:focus {
+    border-color: #36a9cc; 
+    box-shadow: 0px 0px 10px rgba(54, 169, 204, 0.5); 
+}
+.textfield > label {
+    color: #27b4f7;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder {
+    color: #ffffff;
+}
+.btn-login {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: #36a9cc;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-login:hover {
+    background-color: #2a8eaa;
+    box-shadow: 0px 10px 50px -12px #00ff8052;
+}
+.btn-login:active {
+    background-color: #2a8eaa; 
+    box-shadow: 0px 10px 50px -12px #00ff8052; 
+}
+.btn-login:focus {
+    outline: none;
+}

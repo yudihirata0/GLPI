@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abertura de Chamado</title>
+    <link rel="stylesheet" href="css/chamados.css">
+</head>
+<body>
+    <div class="main-chamados">
+        <!-- Seção Esquerda (Texto e Logo) -->
+        <div class="left-chamados">
+            <h1>Abertura de Chamado</h1>
+            <p>Preencha os dados abaixo para abrir um chamado de suporte.</p>
+            <img src="img/glpi-logo.webp" alt="glpi-logo" class="left-chamados-image">
+        </div>
+
+        <!-- Seção Direita (Formulário de Abertura de Chamado) -->
+        <div class="right-chamados">
+            <div class="form-main-chamados">
+                <h2>Detalhes do Chamado</h2>
+                <form action="/enviar-chamado" method="POST">
+                    <div class="input-field">
+                        <label for="titulo">Título</label>
+                        <input type="text" id="titulo" name="titulo" placeholder="Digite o título do chamado" required>
+                    </div>
+                    <div class="input-field">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" name="descricao" placeholder="Descreva o problema" required></textarea>
+                    </div>
+                    <div class="input-field">
+                        <label for="prioridade">Prioridade</label>
+                        <select id="prioridade" name="prioridade" required>
+                            <option value="baixa">Baixa</option>
+                            <option value="media">Média</option>
+                            <option value="alta">Alta</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-chamados">Abrir Chamado</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
